@@ -1,0 +1,25 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+.title-font {
+	font-family: Montserrat;
+	font-weight: 700;
+	color: $blackColor;
+}
+
+.footer-link {
+	font-weight: 600;
+	font-size: 14px;
+	color: #707070;
+}
+
+.button {
+	background-color: $blackColor;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fffff0;
+	border-radius: 21px;
+	padding: 6px 12px;
+
+	min-width: 160px;
+	min-height: 40px;
+}
