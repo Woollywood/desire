@@ -1,5 +1,7 @@
 @use "sass:math";
 
+@import "libs/swiper/swiper-bundle";
+
 // Подключение шрифтов локально из папки "./src/fonts" =======================================================================================================================
 @import "config/fonts";
 
@@ -33,4 +35,13 @@
 // Подключение стилей отдельных блоков и секций =======================================================================================================================
 @import "layout/header";
 @import "layout/footer";
+@import "layout/page";
 @import "layout/rightside-menu";
+@import "layout/top";
+@import "layout/new-collection";
+@import "layout/collections";
+@import "layout/decor";
+@import "layout/how-it-works";
+@import "layout/gallery";
+@import "layout/blog-preview";
+@import "layout/blog-item";

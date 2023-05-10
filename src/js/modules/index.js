@@ -142,17 +142,3 @@ export {
 	menuOpen,
 	menuClose,
 };
-
-// модуль работы с rightside-menu ==============================================
-
-const headerButton = document.querySelector(".header__button");
-const rightsideЬenuСloseButton = document.querySelector(".rightside-menu__close");
-const rightsideMenu = document.querySelector(".rightside-menu");
-
-headerButton.addEventListener("click", function () {
-	rightsideMenu.classList.add("rightside-menu_show");
-});
-
-rightsideЬenuСloseButton.addEventListener("click", function () {
-	rightsideMenu.classList.remove("rightside-menu_show");
-});

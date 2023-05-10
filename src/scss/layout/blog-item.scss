@@ -1,0 +1,41 @@
+.blog-item {
+	&__preview {
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	&__img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__meta {
+		font-size: 14px;
+		color: #707070;
+		margin-bottom: 10px;
+
+		> a {
+			&:hover {
+				text-decoration: underline;
+				text-decoration-color: #707070;
+				text-decoration-thickness: 2px;
+				text-underline-offset: 3px;
+			}
+		}
+	}
+
+	&__time {
+	}
+
+	&__author {
+	}
+
+	&__theme {
+	}
+
+	&__title {
+		font-size: 24px;
+	}
+}

@@ -1,3 +1,7 @@
+import $ from "jquery";
+import Swiper from "swiper/bundle";
+import mixitup from "mixitup";
+
 /*
  !(i)
  Код попадает в итоговый файл, только когда вызвана функция, например FLSFunctions.spollers();
@@ -65,3 +69,31 @@ isWebp();
 /* Раскомментировать для использования */
 // togglePopupWindows()
 // =======================================================================================================
+
+$(function () {
+	$(".header__button").on("click", function () {
+		$(".rightside-menu").addClass("rightside-menu_show");
+	});
+
+	$(".rightside-menu__close").on("click", function () {
+		$(".rightside-menu").removeClass("rightside-menu_show");
+	});
+
+	var swiper = new Swiper(".swiper-top", {
+		allowTouchMove: false,
+		effect: "fade",
+		pagination: {
+			el: ".swiper-pagination",
+		},
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+		},
+	});
+
+	var mixer = mixitup(".gallery__inner", {
+		load: {
+			filter: ".category-bedroom",
+		},
+	});
+});

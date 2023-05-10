@@ -1,0 +1,23 @@
+.blog-preview {
+	padding: 90px 0 50px;
+
+	&__container {
+	}
+
+	&__title {
+		font-size: 36px;
+		line-height: 51px;
+		max-width: 430px;
+		text-align: center;
+		margin: 0 auto 30px;
+	}
+
+	&__items {
+		display: flex;
+		gap: 30px;
+	}
+
+	&__item {
+	}
+}
+

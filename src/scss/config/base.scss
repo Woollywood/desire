@@ -21,6 +21,11 @@ body {
   margin: 0 auto;
   padding: 0 rem($mainOffset);
 }
+[class*="__container-fluid"] {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 rem(25);
+}
 // Стили отзывчивых картинок (IBG) ============================================
 [class*="-ibg"] {
   position: relative;
