@@ -6,13 +6,16 @@
 
 	&__list {
 		display: flex;
+		overflow-x: auto;
 	}
 
 	&__item {
+		position: relative;
+		padding-right: 8px;
+
 		&:not(:last-child)::after {
 			content: "/";
-			margin-left: -4px;
-			margin-right: 4px;
+			position: absolute;
 		}
 	}
 

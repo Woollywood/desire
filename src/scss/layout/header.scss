@@ -12,33 +12,79 @@
 
 		padding-top: 15px;
 		padding-bottom: 15px;
+
+		@include media($media-medium) {
+			height: 90px;
+			gap: 40px;
+		}
+
+		@include media($media-small) {
+			flex-wrap: wrap;
+			gap: 20px;
+		}
 	}
 
 	&__menu {
+		@include media($media-small) {
+
+		}
 	}
 
 	&__logo {
 		flex: 1 1 auto;
 		padding: 0 15px;
+
+		@include media($media-small) {
+			order: -1;
+		}
 	}
 
 	&__button {
 		background-color: transparent;
+
+		@include media($media-medium) {
+			display: none;
+		}
+	}
+
+	&__burger {
+		box-sizing: content-box;
+		padding: 15px;
+
+		@include media($media-small) {
+			order: -1;
+		}
 	}
 }
 
 .menu {
 	&_left {
 		padding-left: 32.5px;
+
+		@include media($media-medium) {
+			padding: 0;
+		}
 	}
 
 	&_right {
 		padding-right: 61.5px;
+
+		@include media($media-medium) {
+			padding: 0;
+		}
 	}
 
 	&__list {
 		display: flex;
 		gap: 80px;
+
+		@include media($media-medium) {
+			gap: 50px;
+		}
+
+		@include media($media-small) {
+			display: none;
+		}
 	}
 
 	&__item {
@@ -51,8 +97,29 @@
 			text-decoration: underline;
 			text-underline-offset: 4px;
 			text-decoration-thickness: 2px;
-			text-decoration-color: rgba(#363838, .7);
+			text-decoration-color: rgba(#363838, 0.7);
 		}
+	}
+}
+
+.burger {
+	display: none;
+	height: 30px;
+	width: 45px;
+
+	background-color: transparent;
+
+	span {
+		height: 3px;
+		width: 100%;
+		background-color: black;
+		border-radius: 5px;
+	}
+
+	@include media($media-small) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 }
 
@@ -60,6 +127,7 @@
 	display: flex;
 	justify-content: center;
 
-	&__img {
+	@include media($media-small) {
+		justify-content: flex-start;
 	}
 }

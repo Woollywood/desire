@@ -3,13 +3,19 @@ $minWidth: 320; // минимальная ширина телефона
 $maxWidthContainer: 1140; // ширина контейнера с учетом padding слева и справа
 $containerWidth: 1110; // ширина контейнера из макета
 
+$media-large: 959;
+$media-medium: 767;
+$media-small: 575;
+
 $mainOffset: 15; // отступы безопасности для контейнера
 $mainFont: OpenSans; // !указать здесь основное семейство шрифта
 $mainWeight: 400; // !указать здесь основное начертание шрифта
 
 $z-index-rightside-menu: 1000;
+$z-index-dropdown-menu: 1500;
 
 $width-sidebar: 350px;
+$width-dropdown-menu: 400px;
 
 $headerHeight: 120;
 $footerHeight: 100;

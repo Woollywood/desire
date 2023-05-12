@@ -129,6 +129,18 @@ $(function () {
 
 		return false;
 	})
+
+	$('.header__burger').on('click', function() {
+		if($('.dropdown-menu').hasClass('dropdown-menu_hidden')) {
+			$('.dropdown-menu').removeClass('dropdown-menu_hidden');
+		} else {
+			$('.dropdown-menu').addClass('dropdown-menu_hidden');
+		}
+	})
+
+	$('.dropdown-menu__close').on('click', function() {
+		$('.dropdown-menu').addClass('dropdown-menu_hidden');
+	})
 });
 
 Fancybox.bind("[data-fancybox]", {

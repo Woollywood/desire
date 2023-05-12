@@ -1,0 +1,44 @@
+.dropdown-menu {
+	position: absolute;
+	z-index: $z-index-dropdown-menu;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: white;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	transform: translateX(0);
+	transition: all .3s linear;
+
+	&_hidden {
+		transform: translateX(-200%);
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 80px;
+	}
+
+	&__item {
+	}
+
+	&__link {
+		font-size: 36px;
+	}
+
+	&__close {
+		position: absolute;
+		left: 35px;
+		top: 35px;
+		width: 70px;
+		height: 70px;
+		background-color: transparent;
+	}
+}

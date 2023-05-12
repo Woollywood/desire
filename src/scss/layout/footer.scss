@@ -16,19 +16,57 @@
 				padding-right: 15px;
 			}
 		}
+
+		@include media($media-large) {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+
+		@include media($media-medium) {
+			flex-wrap: wrap;
+			row-gap: 30px;
+		}
+
+		@include media($media-small) {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
 	}
 
 	&__info {
 		max-width: 540px;
+
+		@include media($media-medium) {
+			max-width: unset;
+			flex: 1 1 100%;
+		}
 	}
 
 	&__social {
 		margin-right: auto;
 		margin-left: 100px;
+
+		@include media($media-large) {
+			margin-left: 50px;
+		}
+
+		@include media($media-medium) {
+			margin: unset;
+			flex: 1 1 50%;
+		}
 	}
 
 	&__menu {
 		margin-right: 60px;
+
+		@include media($media-large) {
+			margin-right: 50px;
+		}
+
+		@include media($media-medium) {
+			margin: unset;
+			flex: 1 1 50%;
+		}
 	}
 
 	&__copyright {
@@ -38,33 +76,49 @@
 .info-footer {
 	&__title {
 		margin-bottom: 14px;
+
+		@include media($media-large) {
+			text-align: center;
+		}
+
+		@include media($media-medium) {
+			font-size: 24px;
+		}
 	}
 
 	&__text {
 		max-width: 476px;
 		margin-bottom: 16px;
+
+		@include media($media-large) {
+			text-align: center;
+		}
+
+		@include media($media-medium) {
+			max-width: unset;
+		}
+
+		@include media($media-medium) {
+			font-size: 18px;
+		}
 	}
 
 	&__email {
-		position: relative;
-		display: inline-block;
+		display: flex;
+		gap: 15px;
 		font-size: 14px;
 		font-weight: 600;
 		color: $blackColor;
 		margin-bottom: 22px;
-		padding-left: 30px;
 
-		&::before {
-			content: "";
-			background-image: url(@img/footer/letter.svg);
-			background-repeat: no-repeat;
+		@include media($media-large) {
+			justify-content: center;
+		}
+	}
 
-			position: absolute;
-			left: 0;
-			top: 7px;
-
-			width: 16px;
-			height: 16px;
+	&__email-text {
+		@include media($media-medium) {
+			font-size: 16px;
 		}
 	}
 
@@ -90,14 +144,35 @@
 			font-weight: 400;
 			color: #a1a1a1;
 		}
+
+		@include media($media-medium) {
+			font-size: 18px;
+		}
 	}
 
 	&__button {
+		@include media($media-large) {
+			width: 180px;
+			margin: 0 auto;
+		}
+	}
+
+	@include media($media-large) {
+		flex-direction: column;
+		row-gap: 20px;
 	}
 }
 .social-footer {
 	max-width: 130px;
 	width: 100%;
+
+	@include media($media-medium) {
+		max-width: unset;
+		width: unset;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
 	&__item {
 		&:not(:last-child) {
@@ -148,11 +223,23 @@
 				background-repeat: no-repeat;
 			}
 		}
+
+		@include media($media-medium) {
+			font-size: 18px;
+		}
 	}
 }
 .menu-footer {
 	max-width: 130px;
 	width: 100%;
+
+	@include media($media-medium) {
+		max-width: unset;
+		width: unset;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
 	&__list {
 	}
@@ -164,6 +251,9 @@
 	}
 
 	&__link {
+		@include media($media-medium) {
+			font-size: 18px;
+		}
 	}
 }
 .copyright-footer {
