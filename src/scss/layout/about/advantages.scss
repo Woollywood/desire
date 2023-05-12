@@ -1,0 +1,22 @@
+.advantages {
+	padding: 130px 0 70px;
+
+	&__container {
+	}
+
+	&__title {
+		font-size: 36px;
+		line-height: 60px;
+		max-width: 830px;
+	}
+
+	&__text {
+		margin-left: 285px;
+
+		> p {
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}

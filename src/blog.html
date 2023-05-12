@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/head.html', { 'title': 'Blog' })
+	<body>
+		<div class="wrapper">
+			@@include('html/header.html', {})
+			<main class="page">
+				<div data-observ></div>
+				@@include('html/breadcrumbs.html', { 'path': 'Blog' })
+				<div class="page-blog__container">
+					<div class="page-blog blog">
+						<div class="blog__content">
+							<div class="blog__items">
+								<section class="blog__item">
+									<div class="blog__image">
+										<img class="blog__img" src="@img/posts/01.jpg" alt="img" />
+									</div>
+									<div class="blog__meta blog-item__meta">
+										<span class="blog-item__time">March 12, 2020</span> |
+										<a class="blog-item__author" href="#">by Ann Summers</a> |
+										<a class="blog-item__theme" href="#">Inrerior</a>
+									</div>
+									<a class="blog__link" href="#">
+										<h3 class="blog__title title-font">
+											Red selfies edison bulb four dollar toast humblebrag for the
+											furniture
+										</h3>
+									</a>
+									<div class="blog__text">
+										Everyday carry actually neutra authentic kogi shabby chic
+										migas small batch craft beer. Literally williamsburg tote
+										bag farm-to-table mustache ugh deep v irony. Af man bun
+										copper mug iPhone enamel pin pug selvage hammock palo santo
+										godard thundercats coloring book yuccie woke. Ugh pok pok
+										taxidermy pabst enamel pin edison bulb farm-to-table
+									</div>
+								</section>
+								<blockquote class="blog__item">
+									<div
+										class="blog__quote quote-font title-line title-line_center">
+										“Simplicity is not the goal. It is the by-product of a good
+										idea and modest expectations”
+									</div>
+									<div class="blog__author title-font">Paul Rand</div>
+								</blockquote>
+								<section class="blog__item">
+									<div class="blog__video">
+										<a
+											class="demonstration__play-button play-button"
+											data-fancybox
+											data-caption="Test caption"
+											href="static/video_2.mp4">
+											<img src="@img/icons/play.svg" alt="play-button-icon" />
+										</a>
+										<div class="blog__video-preview-ibg">
+											<img src="@img/posts/02.jpg" alt="img" />
+										</div>
+									</div>
+									<div class="blog__meta blog-item__meta">
+										<span class="blog-item__time">March 12, 2020</span> |
+										<a class="blog-item__author" href="#">by Ann Summers</a> |
+										<a class="blog-item__theme" href="#">Inrerior</a>
+									</div>
+									<a class="blog__link" href="">
+										<h3 class="blog__title title-font">
+											Red selfies edison bulb four dollar toast humblebrag for the
+											furniture
+										</h3>
+									</a>
+								</section>
+								<section class="blog__item">
+									<div class="swiper blog-swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="blog__image">
+													<img
+														class="blog__img"
+														src="@img/posts/01.jpg"
+														alt="img" />
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="blog__image">
+													<img
+														class="blog__img"
+														src="@img/posts/02.jpg"
+														alt="img" />
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="blog__image">
+													<img
+														class="blog__img"
+														src="@img/posts/03.jpg"
+														alt="img" />
+												</div>
+											</div>
+										</div>
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+									</div>
+									<div class="blog__meta blog-item__meta">
+										<span class="blog-item__time">March 12, 2020</span> |
+										<a class="blog-item__author" href="#">by Ann Summers</a> |
+										<a class="blog-item__theme" href="#">Inrerior</a>
+									</div>
+									<a class="blog__link" href="">
+										<h3 class="blog__title title-font">
+											Red selfies edison bulb four dollar toast humblebrag for the
+											furniture
+										</h3>
+									</a>
+									<div class="blog__text">
+										Everyday carry actually neutra authentic kogi shabby chic
+										migas small batch craft beer. Literally williamsburg tote
+										bag farm-to-table mustache ugh deep v irony. Af man bun
+										copper mug iPhone enamel pin pug selvage hammock palo santo
+										godard thundercats coloring book yuccie woke. Ugh pok pok
+										taxidermy pabst enamel pin edison bulb farm-to-table
+									</div>
+								</section>
+							</div>
+							<div class="blog__pagination pagination-blog">
+								<a class="pagination-blog__arrow pagination-blog__arrow_hidden" href="#">
+									<img class="pagination-blog__img" src="@img/icons/arrow-left.svg" alt="img">
+								</a>
+								<ul class="pagination-blog__list">
+									<li class="pagination-blog__item">
+										<a class="pagination-blog__num pagination-blog__num_active" href="#">1</a>
+									</li>
+									<li class="pagination-blog__item">
+										<a class="pagination-blog__num" href="#">2</a>
+									</li>
+								</ul>
+								<a class="pagination-blog__arrow" href="#">
+									<img class="pagination-blog__img" src="@img/icons/arrow-right.svg" alt="img">
+								</a>
+							</div>
+						</div>
+						@@include('html/sidebar.html', {})
+					</div>
+				</div>
+			</main>
+			@@include('html/footer.html', {})
+		</div>
+		@@include('html/script.html', {})
+	</body>
+</html>

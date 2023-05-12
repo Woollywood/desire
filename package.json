@@ -36,6 +36,7 @@
     "@babel/core": "^7.19.1",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.19.1",
+    "@fancyapps/ui": "^5.0.17",
     "babel-loader": "^8.2.5",
     "browser-sync": "^2.27.7",
     "chalk": "^5.2.0",

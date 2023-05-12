@@ -1,0 +1,27 @@
+.breadcrumbs {
+	padding: 15px 0;
+
+	&__container {
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		&:not(:last-child)::after {
+			content: "/";
+			margin-left: -4px;
+			margin-right: 4px;
+		}
+	}
+
+	&__link {
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	&_background {
+		background-color: rgba(#dfdfdf, 0.5);
+	}
+}

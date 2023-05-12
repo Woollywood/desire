@@ -1,0 +1,56 @@
+.main-contact {
+	&__container {
+	}
+
+	&__title {
+		font-size: 36px;
+	}
+
+	&__inner {
+		margin-left: 285px;
+	}
+
+	&__social {
+		margin-bottom: 21px;
+	}
+
+	&__text {
+		margin-bottom: 15px;
+	}
+
+	&__phone {
+	}
+
+	&__street {
+	}
+
+	&__city {
+		margin-bottom: 16px;
+	}
+
+	&__form {
+	}
+
+	&__email {
+		position: relative;
+		display: inline-block;
+		font-size: 14px;
+		font-weight: 600;
+		color: $blackColor;
+		margin-bottom: 22px;
+		padding-left: 30px;
+
+		&::before {
+			content: "";
+			background-image: url(@img/footer/letter.svg);
+			background-repeat: no-repeat;
+
+			position: absolute;
+			left: 0;
+			top: 7px;
+
+			width: 16px;
+			height: 16px;
+		}
+	}
+}

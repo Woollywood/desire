@@ -6,6 +6,13 @@
 	color: $blackColor;
 }
 
+.quote-font {
+	font-family: OpenSans;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 24px;
+}
+
 .title-line {
 	position: relative;
 
@@ -67,12 +74,34 @@
 	}
 }
 
+.tag {
+	display: inline-block;
+
+	background-color: transparent;
+	padding: 6px 15px;
+	border: 1px solid rgba(#454647, 0.5);
+	border-radius: 20px;
+	line-height: 120%;
+
+	font-weight: 600;
+	font-size: 14px;
+	color: #8f8d8d;
+}
+
 .mixitup-control-active {
 	border: 1px solid rgba(#ffef35, 0.5);
 	background-color: rgba(#ffef35, 0.5);
 	color: $blackColor;
 }
 
-.blog-item {
-	
+.play-button {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: rgba($blackColor, 0.4);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+

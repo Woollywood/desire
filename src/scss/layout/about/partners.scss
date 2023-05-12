@@ -1,0 +1,21 @@
+.partners {
+	padding-top: 10px;
+
+	&__container-fluid {
+		display: flex;
+		align-items: center;
+		gap: 70px;
+	}
+
+	&__link {
+		display: block;
+		flex: 1 1 auto;
+	}
+
+	&__img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}

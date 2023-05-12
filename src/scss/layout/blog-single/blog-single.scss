@@ -1,0 +1,167 @@
+.blog-single {
+	&__title {
+		font-size: 28px;
+	}
+
+	&__text {
+		p {
+			margin-bottom: 40px;
+		}
+
+		blockquote {
+			background-color: transparent;
+			padding: 0 40px;
+
+			font-size: 24px;
+			line-height: 38px;
+			font-weight: 300;
+			font-style: italic;
+
+			margin-bottom: 30px;
+		}
+
+		.blog__author {
+			position: relative;
+			text-align: left;
+
+			font-size: 16px;
+
+			padding-top: 23px;
+			margin-top: 23px;
+
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 200px;
+				height: 1px;
+				background-color: #6d7278;
+			}
+		}
+	}
+
+	&__tags-title {
+		font-size: 20px;
+	}
+
+	.blog-single__tags {
+		margin-bottom: 40px;
+	}
+
+	&__links {
+		display: flex;
+		justify-content: space-between;
+
+		padding: 40px 0 32px;
+		border-top: 1px solid #dfdfdf;
+		border-bottom: 1px solid #dfdfdf;
+	}
+
+	&__link {
+		display: block;
+		max-width: 250px;
+		font-size: 14px;
+	}
+
+	&__link-prev,
+	&__link-next {
+		position: relative;
+	}
+
+	&__link-prev {
+		padding-left: 30px;
+	}
+
+	&__link-next {
+		padding-right: 20px;
+	}
+
+	&__link-prev::before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 12px;
+		height: 23px;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		background: url(@img/icons/arrow-left.svg) no-repeat;
+	}
+
+	&__link-next::after {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 12px;
+		height: 23px;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		background: url(@img/icons/arrow-right.svg) no-repeat;
+	}
+
+	&__comments {
+		padding: 35px 0 40px;
+	}
+
+	&__comments-title {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	&__time {
+		color: #A1A1A1;
+	}
+
+	&__post-comment-title {
+		margin-bottom: 25px;
+	}
+}
+
+.comments {
+	&__list {
+	}
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		gap: 15px;
+
+		&:not(:last-child) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__avatar {
+		border-radius: 50%;
+	}
+
+	&__text {
+
+	}
+
+	&__author-name {
+	}
+
+	&__comment-text {
+		
+	}
+
+	&__reply {
+		display: block;
+	}
+}
+.blog {
+	&__meta {
+	}
+}
+.blog-item {
+	&__meta {
+	}
+
+	&__time {
+	}
+}

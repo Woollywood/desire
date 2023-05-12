@@ -91,3 +91,7 @@ body {
     padding-top: rem($headerHeight);
   }
 }
+
+a:hover {
+	text-decoration: underline;
+}

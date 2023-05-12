@@ -1,0 +1,11 @@
+.map {
+	&__container-fluid {
+		display: flex;
+		max-height: 700px;
+		height: 700px;
+
+		iframe {
+			flex: 1 1 auto;
+		}
+	}
+}

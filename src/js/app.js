@@ -1,6 +1,7 @@
 import $ from "jquery";
 import Swiper from "swiper/bundle";
 import mixitup from "mixitup";
+import { Fancybox } from "@fancyapps/ui";
 
 /*
  !(i)
@@ -79,7 +80,7 @@ $(function () {
 		$(".rightside-menu").removeClass("rightside-menu_show");
 	});
 
-	var swiper = new Swiper(".swiper-top", {
+	var swiperTop = new Swiper(".swiper-top", {
 		allowTouchMove: false,
 		effect: "fade",
 		pagination: {
@@ -91,9 +92,45 @@ $(function () {
 		},
 	});
 
-	var mixer = mixitup(".gallery__inner", {
-		load: {
-			filter: ".category-bedroom",
+	var swiperContact = new Swiper(".page-contact-swiper", {
+		pagination: {
+			el: ".swiper-pagination",
 		},
 	});
+
+	var swiperBlog = new Swiper(".blog-swiper", {
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	});
+
+	if ($(".gallery__inner").length > 0) {
+		var mixer = mixitup(".gallery__inner", {
+			load: {
+				filter: ".category-bedroom",
+			},
+		});
+	}
+
+	$.each($('.form__checkbox'), function(index, val) {
+		if($(this).find('input').prop('checked') === true) {
+			$(this).addClass('form__checkbox_active');
+		}
+	})
+
+	$('.form__checkbox').on('click', function(event) {
+		if($(this).hasClass('form__checkbox_active')) {
+			$(this).find('input').prop('checked', false);
+		} else {
+			$(this).find('input').prop('checked', true);
+		}
+		$(this).toggleClass('form__checkbox_active');
+
+		return false;
+	})
+});
+
+Fancybox.bind("[data-fancybox]", {
+	// Your custom options
 });

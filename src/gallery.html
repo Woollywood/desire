@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/head.html', { 'title': 'About' })
+	<body>
+		<div class="wrapper">
+			@@include('html/header.html', {})
+			<main class="page">
+				<div data-observ></div>
+				@@include('html/breadcrumbs.html', { 'path': 'Gallery' })
+				<div class="page-galalery__gallery gallery">
+					<div class="gallery__container-fluid">
+						<div class="gallery__buttons">
+							<button class="gallery__tab tab" data-filter=".category-bedroom">
+								Bedroom furniture
+							</button>
+							<button class="gallery__tab tab" data-filter=".category-living-room">
+								Living room furniture
+							</button>
+							<button class="gallery__tab tab" data-filter=".category-office">
+								Office furniture
+							</button>
+							<button class="gallery__tab tab" data-filter=".category-char">
+								Chair
+							</button>
+							<button class="gallery__tab tab" data-filter=".category-diving-room">
+								Dining room futniture
+							</button>
+						</div>
+						<div class="gallery__inner">
+							<div class="gallery__top">
+								<div class="gallery__items gallery__left mix category-bedroom">
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/01.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/02.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/03.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/04.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/05.jpg"
+											alt="img" />
+									</a>
+								</div>
+								<div class="gallery__items gallery__left mix category-living-room">
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/01.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/02.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/03.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/04.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/05.jpg"
+											alt="img" />
+									</a>
+								</div>
+								<div class="gallery__items gallery__left mix category-office">
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/01.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/02.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/03.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/04.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/05.jpg"
+											alt="img" />
+									</a>
+								</div>
+								<div class="gallery__items gallery__left mix category-char">
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/01.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/02.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/03.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/04.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/05.jpg"
+											alt="img" />
+									</a>
+								</div>
+								<div class="gallery__items gallery__left mix category-diving-room">
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/01.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/02.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/03.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/04.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/05.jpg"
+											alt="img" />
+									</a>
+								</div>
+							</div>
+							<div class="gallery__bottom">
+								<div class="gallery__items gallery__right mix category-bedroom">
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/01.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/02.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/03.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/04.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/05.jpg"
+											alt="img" />
+									</a>
+								</div>
+								<div class="gallery__items gallery__right mix category-living-room">
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/01.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/02.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/03.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/04.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/05.jpg"
+											alt="img" />
+									</a>
+								</div>
+								<div class="gallery__items gallery__right mix category-office">
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/01.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/02.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/03.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/04.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/05.jpg"
+											alt="img" />
+									</a>
+								</div>
+								<div class="gallery__items gallery__right mix category-char">
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/01.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/02.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/03.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/04.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/05.jpg"
+											alt="img" />
+									</a>
+								</div>
+								<div class="gallery__items gallery__right mix category-diving-room">
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/01.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/02.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/03.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/04.jpg"
+											alt="img" />
+									</a>
+									<a class="gallery__item" href="#">
+										<img
+											class="gallery__img"
+											src="@img/page/gallery/05.jpg"
+											alt="img" />
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/footer.html', {})
+		</div>
+		@@include('html/script.html', {})
+	</body>
+</html>

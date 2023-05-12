@@ -1,6 +1,7 @@
 @use "sass:math";
 
 @import "libs/swiper/swiper-bundle";
+@import "libs/fancybox";
 
 // Подключение шрифтов локально из папки "./src/fonts" =======================================================================================================================
 @import "config/fonts";
@@ -34,14 +35,47 @@
 
 // Подключение стилей отдельных блоков и секций =======================================================================================================================
 @import "layout/header";
-@import "layout/footer";
-@import "layout/page";
 @import "layout/rightside-menu";
-@import "layout/top";
-@import "layout/new-collection";
+@import "layout/footer";
+
+// Home
+@import "layout/home/page";
+@import "layout/home/top";
+@import "layout/home/new-collection";
+@import "layout/home/how-it-works";
+@import "layout/home/blog-preview";
+
+// About
+@import "layout/about/page";
+@import "layout/about/top";
+@import "layout/about/advantages";
+@import "layout/about/demonstration";
+@import "layout/about/inspiration";
+@import "layout/about/partners";
+@import "layout/about/cards";
+
+// Gallery
+@import "layout/gallery/page-gallery";
+
+// Contact
+@import "layout/contact/page-contact";
+@import "layout/contact/map";
+@import "layout/contact/main-contact";
+@import "layout/contact/contact-collections";
+
+// Blog
+@import "layout/blog/page-blog";
+@import "layout/blog/blog";
+
+// Blog-single
+@import "layout/blog-single/blog-single";
+
+// Common
 @import "layout/collections";
-@import "layout/decor";
-@import "layout/how-it-works";
+@import "layout/home/decor";
 @import "layout/gallery";
-@import "layout/blog-preview";
+@import "layout/breadcrumbs";
+@import "layout/social";
+@import "layout/form";
+@import "layout/sidebar";
 @import "layout/blog-item";
