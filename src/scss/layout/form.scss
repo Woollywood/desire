@@ -19,6 +19,14 @@
 		& .form__item {
 			flex: 1 1 auto;
 		}
+
+		@include media($media-small) {
+			flex-wrap: wrap;
+
+			& .form__item {
+				flex: 1 1 100%;
+			}
+		}
 	}
 
 	&__item {

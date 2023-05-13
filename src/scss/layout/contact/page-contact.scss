@@ -5,6 +5,14 @@
 
 	&__main {
 		padding-bottom: 100px;
+
+		@include media($media-medium) {
+			padding-bottom: 70px;
+		}
+
+		@include media($media-medium) {
+			padding-bottom: 50px;
+		}
 	}
 
 	&__collections {
