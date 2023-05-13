@@ -1,6 +1,11 @@
 .blog-single {
 	&__title {
 		font-size: 28px;
+
+		@include media($media-small) {
+			font-size: 18px;
+			line-height: 26px;
+		}
 	}
 
 	&__text {
@@ -117,6 +122,10 @@
 
 	&__post-comment-title {
 		margin-bottom: 25px;
+
+		@include media($media-small) {
+			margin-bottom: 15px;
+		}
 	}
 }
 
@@ -125,10 +134,16 @@
 	}
 
 	&__item {
+		position: relative;
+
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
 		gap: 15px;
+
+		@include media($media-small) {
+			gap: 10px;
+		}
 
 		&:not(:last-child) {
 			margin-bottom: 25px;
@@ -140,28 +155,30 @@
 	}
 
 	&__text {
-
+		& .blog-item__meta {
+			@include media($media-small) {
+				margin-bottom: 5px;
+			}
+		}
 	}
 
 	&__author-name {
 	}
 
 	&__comment-text {
-		
+		@include media($media-small) {
+			font-size: 14px;
+		}
 	}
 
 	&__reply {
 		display: block;
-	}
-}
-.blog {
-	&__meta {
-	}
-}
-.blog-item {
-	&__meta {
-	}
 
-	&__time {
+		@include media($media-small) {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
 	}
 }
+

@@ -4,6 +4,11 @@
 	top: 0;
 	width: $width-sidebar;
 
+	@include media($media-large) {
+		position: static;
+		width: unset;
+	}
+
 	&__form {
 		margin-bottom: 30px;
 	}
@@ -44,10 +49,22 @@
 .category-sidebar {
 	&__title {
 		margin-bottom: 14px;
+
+		@include media($media-small) {
+			margin-bottom: 10px;
+		}
 	}
 
 	&__list {
 		margin-bottom: 50px;
+
+		@include media($media-large) {
+			margin-bottom: 40px;
+		}
+
+		@include media($media-small) {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__item {
@@ -66,8 +83,20 @@
 .posts-sidebar {
 	margin-bottom: 50px;
 
+	@include media($media-large) {
+		margin-bottom: 40px;
+	}
+
+	@include media($media-small) {
+		margin-bottom: 30px;
+	}
+
 	&__title {
 		margin-bottom: 24px;
+
+		@include media($media-small) {
+			margin-bottom: 10px;
+		}
 	}
 
 	&__list {
@@ -107,6 +136,14 @@
 }
 .tags-sidebar {
 	margin-bottom: 60px;
+
+	@include media($media-large) {
+		margin-bottom: 40px;
+	}
+
+	@include media($media-small) {
+		margin-bottom: 30px;
+	}
 
 	&__title {
 		margin-bottom: 10px;
