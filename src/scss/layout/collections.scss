@@ -1,11 +1,26 @@
 .collections {
 	display: flex;
-	gap: 30px;
+	row-gap: 30px;
+	margin: 0 -15px;
+
+	@include media($media-large) {
+		flex-wrap: wrap;
+	}
+
+	@include media($media-medium) {
+		row-gap: 20px;
+		margin: 0 -10px;
+	}
+
+	@include media($media-small) {
+		row-gap: 15px;
+		margin: 0;
+	}
 
 	&__item {
 		position: relative;
 
-		flex: 0 1 auto;
+		padding: 0 15px;
 
 		&:hover {
 			.collections__info {
@@ -15,6 +30,20 @@
 			.collections__img {
 				opacity: 0.6;
 			}
+		}
+
+		@include media($media-large) {
+			flex: 1 1 33.333%;
+		}
+
+		@include media($media-medium) {
+			padding: 0 10px;
+			flex: 1 1 50%;
+		}
+
+		@include media($media-small) {
+			padding: 0;
+			flex: 1 1 100%;
 		}
 	}
 

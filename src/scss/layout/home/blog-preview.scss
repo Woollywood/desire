@@ -1,6 +1,10 @@
 .blog-preview {
 	padding: 90px 0 50px;
 
+	@include media($media-small) {
+		padding: 50px 0;
+	}
+
 	&__container {
 	}
 
@@ -10,14 +14,22 @@
 		max-width: 430px;
 		text-align: center;
 		margin: 0 auto 30px;
+
+		@include media($media-small) {
+			font-size: 24px;
+			line-height: 36px;
+		}
 	}
 
 	&__items {
 		display: flex;
 		gap: 30px;
+
+		@include media($media-medium) {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__item {
 	}
 }
-

@@ -1,6 +1,14 @@
 .how-it-works {
 	padding: 70px 0 110px;
 
+	@include media($media-medium) {
+		padding: 60px 0 80px;
+	}
+
+	@include media($media-small) {
+		padding: 40px 0;
+	}
+
 	&__container {
 	}
 
@@ -11,6 +19,10 @@
 	}
 
 	&__content {
+		@include media($media-medium) {
+			display: flex;
+			flex-wrap: wrap;
+		}
 	}
 
 	&__top,
@@ -21,6 +33,11 @@
 
 	&__top {
 		position: relative;
+
+		@include media($media-medium) {
+			flex-wrap: wrap;
+			flex: 1 1 100%;
+		}
 
 		& .how-it-works__item {
 			&:first-child {
@@ -36,6 +53,10 @@
 					height: 10px;
 					border-radius: 50%;
 					background-color: $blackColor;
+
+					@include media($media-medium) {
+						display: none;
+					}
 				}
 			}
 		}
@@ -50,14 +71,42 @@
 			right: 0;
 			bottom: 0;
 			background-color: $blackColor;
+
+			@include media($media-medium) {
+				display: none;
+			}
+		}
+
+		& .how-it-works__item {
+			@include media($media-medium) {
+				flex: 1 1 100%;
+			}
 		}
 	}
 
 	&__bottom {
+		@include media($media-medium) {
+			flex-wrap: wrap;
+			flex: 1 1 100%;
+		}
+
+		& .how-it-works__item {
+			@include media($media-medium) {
+				flex: 1 1 100%;
+			}
+		}
 	}
 
 	&__item {
 		flex: 1 1 25%;
+
+		@include media($media-medium) {
+			padding: 0 !important;
+
+			&::after {
+				display: none !important;
+			}
+		}
 	}
 
 	&__header {
