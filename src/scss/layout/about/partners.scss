@@ -4,12 +4,32 @@
 	&__container-fluid {
 		display: flex;
 		align-items: center;
-		gap: 70px;
+		margin: 0 -35px;
+
+		@include media($media-medium) {
+			flex-wrap: wrap;
+			margin: 0 -20px;
+		}
+
+		@include media($media-small) {
+			margin: 0 -10px;
+		}
 	}
 
 	&__link {
 		display: block;
+		padding: 0 35px;
 		flex: 1 1 auto;
+
+		@include media($media-medium) {
+			flex: 1 1 33.333%;
+			padding: 0 20px;
+		}
+
+		@include media($media-small) {
+			flex: 1 1 50%;
+			padding: 0 10px;
+		}
 	}
 
 	&__img {
